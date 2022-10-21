@@ -3,7 +3,7 @@ import numpy as np
 import time
 
 
-SIZES = [128, 256, 512, 768, 1024, 1280, 2048, ]
+SIZES = [2172, 2432, 2560, 2688, 3200, 4016  ]
 THRESHOLD = 8
 
 
@@ -22,7 +22,7 @@ def strassen(A, B):
     C: np.array: product matrix C
     """
     current_size = len(A) # we are taking just matrix A, as B has the same size
-    if current_size <= THRESHOLD:
+    if current_size%2!=0:
         C = np.matmul(A, B) 
         return C 
     else:

@@ -8,7 +8,7 @@ palette = sbn.color_palette()
 matplotlib.rc('xtick', labelsize=20)
 matplotlib.rc('ytick', labelsize=20)
 
-df = pd.read_csv("python_results.csv")
+df = pd.read_csv("jax_results.csv")
 x_axis = df['SIZE']
 base_y = df[' BASE_RES_MEAN']
 base_err = df[' BASE_RES_STD']

@@ -98,7 +98,7 @@ np.random.seed(42)
 # definition of lists for plots 
 results = {}
 # and save on a file 
-ofile = open("jax_results.csv", "a")
+ofile = open("jax_results.csv", "w")
 ofile.write("SIZE, BASE_RES_MEAN, BASE_RES_STD, OPT_RES_MEAN, OPT_RES_STD\n")
 for SIZE in SIZES: 
     # generate INTEGERS [1-9] random matrices 
